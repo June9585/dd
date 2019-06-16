@@ -1,0 +1,20 @@
+{
+  "name": "apiserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "art-template": "^4.13.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "experss": "0.0.1-security",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.0"
+  }
+}
