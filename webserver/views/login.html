@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- //管理员登陆系统 -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>管理员系统</title>
+</head>
+<link rel="stylesheet" href="../piblic/css/bootstrap.css">
+<script src="../piblic/js/jquery-1.12.4.js"></script>
+
+<style>
+    .box {
+        margin-top: 100px;
+    }
+    .title{text-align: center;}
+    #enter{
+        height: 40px;
+    }
+</style>
+
+<body>
+    <div class="box container">
+        <h1 class="title">管理员系统</h1>
+        <br> <br>
+        <form class="form-horizontal" id="form_login">
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-4 control-label" >账号</label>
+                <div class="col-sm-4 ">
+                    <input type="text" class="form-control" id="title" placeholder="用户账号" autocomplete="off">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-4 control-label">密码</label>
+                <div class="col-sm-4 ">
+                    <input type="password" class="form-control" id="inpwd" placeholder="用户密码" autocomplete="off">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-4 col-sm-4 ">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="chec">记住密码
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-4 col-sm-4 ">
+                    <button type="button" class="btn btn-success  btn-lg btn-block" id="enter">登陆</button>                 
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+
+</body>
+<script src="../piblic/js/login_cpe.js"></script>
+
+
+</html>

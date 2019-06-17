@@ -8,11 +8,13 @@ const studentRouter=require('./routes/user');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// 设置允许跨域 cors
-app.use((req, res, next) => {
-    res.set('Access-Control-Allow-Origin', '*');
-    next();
-  })
+//设置允许跨域
+app.use((req,res,next) => {
+  res.set('Access-Control-Allow-Origin','*');
+  res.set('Access-Control-Allow-Methods','GET,POST,PUT,DELETE,UPDATE');
+  res.set('Access-Control-Allow-Headers','Access_Token');
+  next();
+})
 
   //调用路由
 app.use(studentRouter);
