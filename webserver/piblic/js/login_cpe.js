@@ -26,7 +26,8 @@ $('#enter').on('click', () => {
                 localStorage.setItem('token',data.data.token);
                 location.href = './index.html';
             }else{
-                console.log(data.msg);
+                // console.log(data.msg);
+                $("#mima").html(data.msg);
             }
            
         }, "json");
